@@ -109,7 +109,7 @@ def build_3d_swarm():
 
     # Сохраняем в HTML
     output_file = os.path.expanduser("~/Z-Network/swarm_3d.html")
-    fig.write_html(output_file)
+    fig.write_html(output_file, include_plotlyjs=True)
     print(f"💾 3D-граф сохранен в файл: {output_file}")
     print("👉 Открой этот файл в Firefox, чтобы покрутить граф!")
 
